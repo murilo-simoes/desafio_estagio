@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Estágio</title>
+</head>
+<style>
+    input{
+        width: 100px;
+      
+    }
+
+    label{
+        margin-top: 1rem;
+       
+    }
+
+    #text{
+        font-weight: bold;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    
+    button{
+        margin-top: 1rem;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(208, 203, 203);
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    button:hover{
+        background-color: rgb(249, 133, 133);
+        color: #fff;
+        font-weight: bold;
+        border: 1px solid #fff;
+    }
+</style>
+<body>
+    <div>
+     
+            <label>Grau esférico do olho esquerdo</label>
+            <input value="0" min="-15" step="0.25" max="0" id="ee" type="number" name="E-e"/>
+            <label>Grau esférico do olho direito</label>
+            <input value="0" min="-15" step="0.25" max="0" id="ed" type="number" name="E-d"/>
+            <label>Grau cilíndrico do olho esquerdo</label>
+            <input value="0" min="-6" step="0.25" max="0" id="ce" type="number" name="C-e"/>
+            <label>Grau cilíndrico do olho direito</label>
+            <input value="0" min="-6" step="0.25" max="0" id="cd" type="number" name="C-d"/>
+            <button onclick="ChecarGrau()">Checar Lente</button>
+            <p id="text">Lente necessária:</p>
+            <div id="lente"></div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
